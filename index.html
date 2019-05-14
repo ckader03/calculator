@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+<h1>Calculator</h1>
+<h2>by Ibrahim C</h2>
+<form name = 'calc'>
+<!-- set placeholder to hold an input and a result after calculation -->
+<input type='text' name='display' placeholder="0">
+
+
+<!-- create the 1st of button for the user to click on as input-->
+
+<input class="num" type="button" value="7" onclick='input(this)'>
+<input type="button" value="8" onclick='input(this)'>
+<input type="button" value="9" onclick='input(this)'>
+<input type="button" value="+" onclick='input(this)'>
+<br>
+<!-- create the 2nd of button for the user to click on as input   -->
+<input class="num" type="button" value="4" onclick='input(this)'>
+<input type="button" value="5" onclick='input(this)'>
+<input type="button" value="6" onclick='input(this)'>
+<input type="button" value="-" onclick='input(this)'>
+<br>
+<!-- create the 3rd of button for the user to click on as input   -->
+<input class="num" type="button" value="1" onclick='input(this)'>
+<input type="button" value="2" onclick='input(this)'>
+<input type="button" value="3" onclick='input(this)'>
+<input type="button" value="*" onclick='input(this)'>
+<br>
+<!-- create the 4th of button for the user to click on as input   -->
+<input class="num" type="button" value="0" onclick='input(this)'>
+<input type="button" value="." onclick='input(this)'>
+<input type="button" value="C" onclick='clearDisplay()'>
+<input type="button" value="/" onclick='input(this)'>
+<br>
+
+<!-- create the 5th of button for the user to click on as input   -->
+<input class="num" type="button" style="width:66px"  value="," onclick='input(this)'>
+<input id="avg" type="button" style="width:92px" value="AVG" onclick='average()'>
+<input type="button" style="width:70px" value="=" onclick='enter()'>
+</form>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
